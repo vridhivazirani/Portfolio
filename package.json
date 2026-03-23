@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -15,9 +15,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/vridhivazirani/Portfolio/issues"
   },
-  "homepage": "https://github.com/vridhivazirani/Portfolio#readme"
+  "homepage": "https://github.com/vridhivazirani/Portfolio#readme",
+  "devDependencies": {
+    "vite": "^8.0.0"
+  },
+  "dependencies": {
+    "three": "^0.183.2"
+  }
 }

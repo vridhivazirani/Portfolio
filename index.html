@@ -1,154 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vridhi Vazirani | Portfolio</title>
+    <title>Vridhi Vazirani ✦</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <nav id="navbar">
-        <div class="logo">VV</div>
-        <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<canvas id="bg-canvas"></canvas>
+<div id="cur"></div>
+<div id="cur2"></div>
 
-    <section id="hero">
-        <div class="hero-content reveal">
-            <h1 class="main-title">Vridhi Vazirani</h1>
-            <p class="tagline">Data Science Undergraduate • Global Peer • Innovator</p>
-            <div class="hero-btns">
-                <a href="#contact" class="btn-primary">Work with me</a>
-            </div>
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-line"><span>VRIDHI</span></div>
+  <div class="loader-line"><span>VAZIRANI</span></div>
+  <div class="loader-line"><span>PORTFOLIO</span></div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">V<span>.</span>V</div>
+  <div class="nav-items">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#github">GitHub</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-status"><div class="status-dot"></div>Open to work</div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-stacked">
+    <span class="stacked-word">VRIDHI</span>
+    <span class="stacked-word">VAZIRANI</span>
+    <span class="stacked-word">✦</span>
+    <div class="hero-sub">
+      <div class="hero-tag">Data Scientist · Footballer · Global Explorer</div>
+      <div class="hero-tagline">B.Tech Data Science @ Woxsen University. Currently building at the intersection of AI, data, and global impact — from Hyderabad to Spain to Japan.</div>
+    </div>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-fill">Work with me</a>
+      <a href="#projects" class="btn btn-ghost">View Projects</a>
+    </div>
+  </div>
+
+  <!-- 🎲 INTERACTIVE 3D CUBE -->
+  <div class="cube-panel">
+    <canvas id="cube-canvas"></canvas>
+    <div class="cube-hint">drag to rotate</div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="marquee-item"><span>Data Science</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Machine Learning</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Woxsen University</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Universidade de Vigo · Spain</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Google Developers Group</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Japan · España · India</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>IoT · Arduino</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Space Exploration</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Data Science</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Machine Learning</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Woxsen University</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Universidade de Vigo · Spain</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Google Developers Group</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Japan · España · India</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>IoT · Arduino</span><span class="m-sep">✦</span></div>
+    <div class="marquee-item"><span>Space Exploration</span><span class="m-sep">✦</span></div>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" class="panel">
+  <div class="s-num rv">01 — About</div>
+  <div class="inner">
+    <div class="about-sticky rv rv-d1">
+      <div class="about-photo">
+        <img src="./profile.jpg" alt="Vridhi">
+      </div>
+    </div>
+    <div class="about-text rv rv-d2">
+      <div class="about-big">
+        Hi, I'm Vridhi —<br><span>data scientist</span>,<br>footballer &amp; explorer.
+      </div>
+      <div class="about-body">
+        <p>Currently serving as Senior Executive at Woxsen Japan Centre while pursuing B.Tech in Data Science at Woxsen University. My academic journey deepened through an exchange at Universidade de Vigo, Spain.</p>
+        <p>As Executive of Spectrum (Science Club), Peer Mentor, and Google Developer Groups member, I create meaningful STEM experiences. Passionate about AI, space, football, and cross-cultural collaboration.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-box rv rv-d1"><div class="info-box-k">Education</div><div class="info-box-v">B.Tech Data Science<br>2024 – 2028</div></div>
+        <div class="info-box rv rv-d2"><div class="info-box-k">Exchange</div><div class="info-box-v">Universidade de Vigo<br>Spain, 2025–26</div></div>
+        <div class="info-box rv rv-d3"><div class="info-box-k">Focus</div><div class="info-box-v">AI · ML · Data Analysis</div></div>
+        <div class="info-box rv rv-d4"><div class="info-box-k">Languages</div><div class="info-box-v">English · Hindi · Spanish</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCE ═══ -->
+<section id="experience" class="panel">
+  <div class="s-num rv">02 — Experience</div>
+  <div class="s-title rv rv-d1">WORK &amp;<br><em>Roles</em></div>
+
+  <div class="exp-row rv"><div class="er-date">Feb 2026 –<br>Present</div><div class="er-body"><div class="er-role">Peer Advisor</div><div class="er-co">Woxsen University · Internship</div><div class="er-desc">Peer Mentor for "Communication Skills for Engineers." Led indoor & outdoor experiential sessions. Guided juniors in interpersonal communication and confidence-building.</div></div><div class="er-arrow">↗</div></div>
+
+  <div class="exp-row rv"><div class="er-date">Nov 2025 –<br>Present</div><div class="er-body"><div class="er-role">Assistant</div><div class="er-co">Google Developers Group · Spain</div><div class="er-desc">Attended DevFest Spain — workshops on AI, biotech & app dev. Built a Gemini-powered quiz website. Contributed to community-driven learning events.</div></div><div class="er-arrow">↗</div></div>
+
+  <div class="exp-row rv"><div class="er-date">Dec 2024 –<br>Present</div><div class="er-body"><div class="er-role">Senior Executive</div><div class="er-co">Woxsen Japan Centre · Full-time</div><div class="er-desc">Volunteered at Kizuna Matsuri — Japan's post-earthquake unity festival. Strengthened Indo-Japanese community relations through cultural diplomacy.</div></div><div class="er-arrow">↗</div></div>
+
+  <div class="exp-row rv"><div class="er-date">Jun –<br>Aug 2025</div><div class="er-body"><div class="er-role">Business Development Intern</div><div class="er-co">ITSPRELUDE · Remote, India</div><div class="er-desc">Data-driven market analysis, B2B/B2C partnerships, go-to-market strategy, and full sales pipeline optimization from lead to closure.</div></div><div class="er-arrow">↗</div></div>
+
+  <div class="exp-row rv"><div class="er-date">Dec 2024 –<br>Jul 2025</div><div class="er-body"><div class="er-role">IR Student Committee</div><div class="er-co">Russell Belk Centre · Woxsen</div><div class="er-desc">Organized international panels, cultural festivals, and supported incoming exchange students through mentorship and orientation programs.</div></div><div class="er-arrow">↗</div></div>
+
+  <div class="exp-row rv"><div class="er-date">Sep 2024 –<br>Present</div><div class="er-body"><div class="er-role">Executive — Science Club</div><div class="er-co">Spectrum · Woxsen University</div><div class="er-desc">Led campus-wide Space Exploration Event. Organized telescope stargazing nights, spacewalk simulations, and managed volunteer & logistics teams.</div></div><div class="er-arrow">↗</div></div>
+</section>
+
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects" class="panel">
+  <div class="s-num rv">03 — Projects</div>
+  <div class="s-title rv rv-d1">RESEARCH &amp;<br><em>Projects</em></div>
+  <div class="proj-grid">
+    <div class="pj rv rv-d1"><span class="pj-n">01</span><div class="pj-title">Space Debris Mitigation</div><div class="pj-desc">Presented at Avishkar. Sustainable space travel strategies and debris management for future aerospace missions.</div><div class="pj-tags"><span class="ptag">Space Tech</span><span class="ptag">Research</span></div></div>
+    <div class="pj rv rv-d2"><span class="pj-n">02</span><div class="pj-title">Chemo Patient Monitoring</div><div class="pj-desc">Healthcare network using TCP/UDP protocols, data security, and prioritized critical alerting for patient monitoring.</div><div class="pj-tags"><span class="ptag">Networks</span><span class="ptag">Healthcare</span></div></div>
+    <div class="pj rv rv-d3"><span class="pj-n">03</span><div class="pj-title">Health Monitoring System</div><div class="pj-desc">Portable IoT device with TMP36 & PIR sensors for temperature and pulse — designed for rural communities. SDG 3 & 9.</div><div class="pj-tags"><span class="ptag">IoT</span><span class="ptag">Arduino</span><span class="ptag">SDG</span></div></div>
+    <div class="pj rv rv-d1"><span class="pj-n">04</span><div class="pj-title">Logistics Optimization</div><div class="pj-desc">Amazon–USPS route optimization using DSA to improve delivery efficiency and reduce operational costs.</div><div class="pj-tags"><span class="ptag">DSA</span><span class="ptag">Optimization</span></div></div>
+    <div class="pj rv rv-d2"><span class="pj-n">05</span><div class="pj-title">Intercultural Healthcare</div><div class="pj-desc">Case study on Hmong family in California. AI-driven solutions for cultural misunderstandings in medical care.</div><div class="pj-tags"><span class="ptag">AI</span><span class="ptag">Case Study</span></div></div>
+    <div class="pj rv rv-d3"><span class="pj-n">06</span><div class="pj-title">Gemini Quiz Website</div><div class="pj-desc">Interactive quiz app built with Google Gemini AI at GDG DevFest Spain — generative AI for education.</div><div class="pj-tags"><span class="ptag">Gemini AI</span><span class="ptag">HTML/CSS/JS</span></div></div>
+  </div>
+</section>
+
+<!-- ═══ GITHUB REPOSITORIES ═══ -->
+<section id="github" class="panel">
+  <div class="s-num rv">04 — Repositories</div>
+  <div class="s-title rv rv-d1">GITHUB &amp;<br><em>Code</em></div>
+  <div class="gh-grid rv rv-d2">
+    <div class="gh-card">
+      <div class="gh-name">Portfolio-V1</div>
+      <div class="gh-desc">The first iteration of my personal portfolio. Built with HTML, CSS, and Vanilla JS, focusing on a clean and professional layout to showcase my early data science projects and university involvements.</div>
+      <div class="gh-meta"><span>Vanilla JS</span><span>CSS3</span></div>
+    </div>
+    <div class="gh-card">
+      <div class="gh-name">IoT-Health-Monitor</div>
+      <div class="gh-desc">An Arduino-based IoT monitoring system designed for rural healthcare. It tracks pulse and temperature using TMP36 and PIR sensors, providing a low-cost solution for real-time patient health tracking.</div>
+      <div class="gh-meta"><span>C++</span><span>Arduino</span><span>IoT</span></div>
+    </div>
+    <div class="gh-card">
+      <div class="gh-name">Space-Debris-Viz</div>
+      <div class="gh-desc">A research project exploring sustainable strategies for space debris mitigation. Includes data visualizations presented at Avishkar 2024 to illustrate the growing risk of orbital collisions.</div>
+      <div class="gh-meta"><span>Research</span><span>Data Viz</span></div>
+    </div>
+    <div class="gh-card">
+      <div class="gh-name">Logistics-Optimizer</div>
+      <div class="gh-desc">Algorithm-based route optimization for Amazon-USPS deliveries. Implemented using Data Structures and Algorithms to minimize delivery time and operational overhead.</div>
+      <div class="gh-meta"><span>DSA</span><span>Python</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills" class="panel">
+  <div class="s-num rv">05 — Skills</div>
+  <div class="sk-wrap">
+    <div class="rv">
+      <div class="s-title" style="margin-bottom:24px;">SKILLS &amp;<br><em>Tools</em></div>
+      <p style="font-size:.9rem;line-height:1.8;color:var(--muted);max-width:340px;">A growing toolkit at the intersection of data science, engineering, and human communication.</p>
+    </div>
+    <div class="sk-right rv rv-d2">
+      <div>
+        <div class="sk-group-title">Technical</div>
+        <div class="sk-pills">
+          <span class="sk-pill">Python</span><span class="sk-pill">R</span><span class="sk-pill">SQL</span>
+          <span class="sk-pill">Oracle DB</span><span class="sk-pill">Pandas</span><span class="sk-pill">NumPy</span>
+          <span class="sk-pill">Power BI</span><span class="sk-pill">Tableau</span><span class="sk-pill">Git / GitHub</span>
+          <span class="sk-pill">HTML · CSS · JS</span><span class="sk-pill">Arduino / IoT</span><span class="sk-pill">Network Security</span>
         </div>
-        <div class="hero-image reveal">
-            <div class="profile-frame">
-                <img src="./profile.jpg" alt="Vridhi Vazirani">
-            </div>
+      </div>
+      <div>
+        <div class="sk-group-title">Soft Skills</div>
+        <div class="sk-pills">
+          <span class="sk-pill">Leadership</span><span class="sk-pill">Entrepreneurship</span>
+          <span class="sk-pill">Creative Writing</span><span class="sk-pill">Data Analysis</span>
+          <span class="sk-pill">Cross-Cultural Comm.</span><span class="sk-pill">Adaptability</span>
+          <span class="sk-pill">Public Speaking</span><span class="sk-pill">Team Collaboration</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-container reveal">
-            <p class="summary">
-                Currently serving as a Senior Executive at Woxsen Japan Centre, I contribute to its initiatives while
-                pursuing a Bachelor of Technology in Data Science at Woxsen University. My academic journey is further
-                enriched by an exchange program at Universidade de Vigo, focusing on computer science, broadening my
-                global perspective and technical expertise.
-                <br><br>
-                As an Executive of the Science Club at Woxsen University, I take pride in organizing impactful
-                educational events, suchs as a campus-wide Space Exploration Event. I bring value through my
-                adaptability and skills in databases and network security, aligning my academic and professional
-                experiences to deliver results. Passionate about learning and collaboration, I seek to make meaningful
-                contributions to innovative projects.
-            </p>
-            <div class="stats">
-                <div class="card">
-                    <h3>Focus</h3>
-                    <p>AI, Machine Learning, & Data-Driven Decision Making</p>
-                </div>
-                <div class="card">
-                    <h3>Education</h3>
-                    <p>B.Tech — Data Science (2024–2028)</p>
-                    <p style="font-size: 0.8rem;">Woxsen University, Hyderabad</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ═══ LEADERSHIP ═══ -->
+<section id="leadership" class="panel">
+  <div class="s-num rv">05 — Leadership</div>
+  <div class="s-title rv rv-d1">LEAD &amp;<br><em>Volunteer</em></div>
+  <div class="ld-grid">
+    <div class="ld rv rv-d1"><span class="ld-icon">⚽</span><div class="ld-title">Girls Football Captain</div><div class="ld-when">2024 – Present</div><div class="ld-desc">Led team to victory at Woxsen's Infinity Tournament. Volunteered with specially-abled athletes at Aspanas Velle Center, Spain.</div></div>
+    <div class="ld rv rv-d2"><span class="ld-icon">🎓</span><div class="ld-title">Class Representative</div><div class="ld-when">2024 – 2026</div><div class="ld-desc">Coordinated academic communication and class initiatives between students and faculty at Woxsen University.</div></div>
+    <div class="ld rv rv-d3"><span class="ld-icon">🌍</span><div class="ld-title">ERS Volunteer</div><div class="ld-when">2025</div><div class="ld-desc">Volunteered across cultures — from Kizuna Matsuri in Japan to sports inclusion programs in Spain.</div></div>
+  </div>
+</section>
 
-    <section id="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-grid reveal">
-            <div class="card">
-                <span class="date">2024 – Present</span>
-                <h3>Sales & Business Development</h3>
-                <p class="company">ITSPRELude, India</p>
-                <ul>
-                    <li>Identified market opportunities using data insights.</li>
-                    <li>Managed B2B and B2C partnerships.</li>
-                    <li>Designed go-to-market strategies.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="panel">
+  <div class="ct-kicker rv">Let's connect</div>
+  <div class="ct-big rv rv-d1">
+    <div class="outline">GET IN</div>
+    <div>TOUCH</div>
+    <div class="pinkline">WITH ME</div>
+  </div>
+  <div class="ct-items rv rv-d2">
+    <div class="ct-item"><div class="ct-item-k">Location</div><div class="ct-item-v">Hyderabad, India</div></div>
+    <div class="ct-item"><div class="ct-item-k">Phone</div><div class="ct-item-v">+91 89282 29693</div></div>
+    <div class="ct-item"><div class="ct-item-k">Email</div><div class="ct-item-v">vaziranivridhi07@gmail.com</div></div>
+  </div>
+  <div class="ct-btns rv rv-d3">
+    <a href="https://www.linkedin.com/in/vridhi-vazirani-557083328/" class="btn btn-fill" target="_blank">LinkedIn ↗</a>
+    <a href="mailto:vaziranivridhi07@gmail.com" class="btn btn-ghost">Email Me</a>
+  </div>
+</section>
 
-    <section id="leadership">
-        <h2 class="section-title">Leadership</h2>
-        <div class="experience-grid reveal">
-            <div class="card">
-                <span class="date">2024 – Present</span>
-                <h3>Captain — Girls Football Team</h3>
-                <p>Led team strategy and competitive performance management.</p>
-            </div>
-            <div class="card">
-                <span class="date">2024 – 2026</span>
-                <h3>Class Representative</h3>
-                <p>Coordinated academic communication and class initiatives.</p>
-            </div>
-        </div>
-    </section>
+<footer>
+  <div class="ft-l">Vridhi Vazirani — Portfolio 2025</div>
+  <div class="ft-r">Built with ✦ passion</div>
+</footer>
 
-    <section id="projects">
-        <h2 class="section-title">Research & Projects</h2>
-        <div class="projects-list reveal">
-            <div class="card">
-                <h3>Space Debris Mitigation</h3>
-                <p>Presented at Avishkar; focused on sustainable space travel.</p>
-            </div>
-            <div class="card">
-                <h3>Logistics Optimization</h3>
-                <p>Amazon–USPS optimization using DSA.</p>
-            </div>
-            <div class="card">
-                <h3>IoT Arduino Project</h3>
-                <p>Smart sensors for real-time monitoring.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-card reveal">
-            <div class="card">
-                <h3>Technical</h3>
-                <div class="skills-container">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">R</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">Pandas</span>
-                    <span class="skill-tag">NumPy</span>
-                    <span class="skill-tag">Power BI</span>
-                    <span class="skill-tag">Tableau</span>
-                    <span class="skill-tag">Git/GitHub</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2 class="section-title">Get in Touch</h2>
-        <div class="card reveal">
-            <p>Hyderabad, India</p>
-            <p>+91 89282 29693</p>
-            <p>vaziranivridhi07@gmail.com</p>
-            <div class="social-links" style="margin-top: 20px;">
-                <a href="https://www.linkedin.com/in/vridhi-vazirani-557083328/" class="btn-primary"
-                    target="_blank">LinkedIn</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- More sections to be added -->
-
-    <script type="module" src="./main.js"></script>
+<script type="module" src="./main.js"></script>
 </body>
-
 </html>
